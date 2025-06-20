@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #eaeaea;
+}
+
+.container {
+  width: 400px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: #f1f0e8;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+/* ---------------- HEADER ---------------- */
+.chat-header {
+  background: #036055;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile .left {
+  display: flex;
+  align-items: center;
+}
+
+.profile .arrow {
+  width: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.profile h2 {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.profile span {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.right .icon {
+  width: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* ---------------- CHAT BOX ---------------- */
+.chat-box {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 15px;
+  background: url('../img/bg.jpeg') repeat;
+  background-attachment: fixed;
+}
+
+.chat-r, .chat-l {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chat-r .sp {
+  flex: 1;
+}
+
+.chat-l .sp {
+  flex: 1;
+}
+
+.mess {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  position: relative;
+}
+
+.mess-r {
+  background: #dcf8c6;
+  margin-left: auto;
+}
+
+.chat-l .mess {
+  background: #fff;
+}
+
+.mess p {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.check {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.check img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.emoji {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* ---------------- FOOTER ---------------- */
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.chat-footer textarea {
+  flex: 1;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  resize: none;
+  font-size: 16px;
+}
+
+.chat-footer .emo {
+  width: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.chat-footer .icons {
+  display: flex;
+  margin-left: 10px;
+}
+
+.chat-footer .icons img {
+  width: 24px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.chat-footer .mic {
+  width: 28px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* ---------------- SCROLLBAR ---------------- */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
